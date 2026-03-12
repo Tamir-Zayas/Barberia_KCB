@@ -17,7 +17,7 @@ body,html{
 }
 
 .boton-redirección{
-    background-color: burlywood;
+    background-color: orange;
     color: aliceblue;
     padding: 10px 20px;
     display: inline-block;
@@ -26,5 +26,5 @@ body,html{
     text-decoration: none;
 }
 .boton-redirección:hover{
-    background-color: rgb(226, 182, 123);
+    background-color: orangered;
 }
