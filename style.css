@@ -1,32 +1,78 @@
-body,html{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: center center;
-    background-size: cover;
-    background-color: orange;
-}
-h1{
-    text-align: center;
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 1, 0, 0);
-    color: blue;
+/* 🎨 Paleta Dragon Ball */
+:root {
+    --naranja-goku: #F57C00;
+    --azul-vegeta: #0D47A1;
+    --rojo-kaioken: #D32F2F;
+    --negro: #000000;
+    --blanco: #FFFFFF;
 }
 
-.boton-redirección{
-    background-color: orange;
-    color: aliceblue;
-    padding: 10px 20px;
+/* 🌌 Fondo general */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+    background-image: url('img/aura-bg.png'); /* opcional */
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+}
+
+/* 🟦 Sección Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url('img/goku-bg.jpg'); /* opcional */
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    box-shadow: 0 0 40px rgba(13, 71, 161, 0.7);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--naranja-goku);
+    text-shadow: 0 0 12px rgba(245, 124, 0, 0.9);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--blanco);
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+/* 📦 Contenedor */
+.contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🔥 Botón estilo Dragon Ball */
+.boton-redireccion {
+    background-color: var(--naranja-goku);
+    color: var(--blanco);
+    padding: 12px 24px;
     display: inline-block;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(245, 124, 0, 0.6);
 }
-.boton-redirección:hover{
-    background-color: orangered;
+
+.boton-redireccion:hover {
+    background-color: var(--rojo-kaioken);
+    box-shadow: 0 0 16px rgba(211, 47, 47, 0.8);
+    transform: scale(1.05);
 }
+
+
