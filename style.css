@@ -1,0 +1,32 @@
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center center;
+    background-size: cover;
+    background-color: orange;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 1, 0, 0);
+    color: blue;
+}
+
+.boton-redirección{
+    background-color: orange;
+    color: aliceblue;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.boton-redirección:hover{
+    background-color: orangered;
+}
