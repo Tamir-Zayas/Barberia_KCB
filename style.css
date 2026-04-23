@@ -12,14 +12,11 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--negro);
-    background-image: url('img/aura-bg.png'); /* opcional */
-    background-size: cover;
-    background-position: center;
-    color: var(--blanco);
+    background-color: var(--#000000);
+    color: var(--#FFFFFF);
 }
 
-/* 🟦 Sección Hero */
+/* 🟦 HERO SECTION (GOKU) */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -27,52 +24,89 @@ body {
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     ),
-    url('img/goku-bg.jpg'); /* opcional */
+    url('img/goku-hero.jpg');
     background-size: cover;
     background-position: center;
-    color: var(--blanco);
+    color: var(--#FFFFFF);
     box-shadow: 0 0 40px rgba(13, 71, 161, 0.7);
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    color: var(--naranja-goku);
+    color: var(--#F57C00);
     text-shadow: 0 0 12px rgba(245, 124, 0, 0.9);
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: var(--blanco);
     text-shadow: 0 0 8px rgba(255,255,255,0.6);
 }
 
-/* 📦 Contenedor */
-.contenedor {
-    max-width: 900px;
-    margin: 40px auto;
+/* 🔵 SEPARADORES (GOKU + VEGETA BLUE) */
+.separador img {
+    width: 100%;
+    display: block;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(245,124,0,0.6);
+}
+
+/* 🟧 SERVICIOS (BROLY) */
+.servicios {
+    padding: 60px 20px;
+    background-image: url('img/broly-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.servicios::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+
+.servicios > * {
+    position: relative;
+    z-index: 1;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--#F57C00);
+    text-shadow: 0 0 10px rgba(245, 124, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+/* 🟦 GRID DE SERVICIOS */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 🔥 TARJETAS DE SERVICIO */
+.servicio-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--#0D47A1);
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
-}
-
-/* 🔥 Botón estilo Dragon Ball */
-.boton-redireccion {
-    background-color: var(--naranja-goku);
-    color: var(--blanco);
-    padding: 12px 24px;
-    display: inline-block;
-    margin-top: 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+    color: var(--#FFFFFF);
     transition: 0.3s ease;
-    box-shadow: 0 0 10px rgba(245, 124, 0, 0.6);
+    box-shadow: 0 0 12px rgba(13, 71, 161, 0.5);
 }
 
-.boton-redireccion:hover {
-    background-color: var(--rojo-kaioken);
-    box-shadow: 0 0 16px rgba(211, 47, 47, 0.8);
+.servicio-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(245, 124, 0, 0.9);
+    border-color: var(--#F57C00);
 }
-
 
