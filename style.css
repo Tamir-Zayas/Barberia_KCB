@@ -24,7 +24,7 @@ body {
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     ),
-    url('img/goku-hero.jpg');
+    url('images/Goku-Hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--#FFFFFF);
@@ -55,7 +55,7 @@ body {
 /* 🟧 SERVICIOS (BROLY) */
 .servicios {
     padding: 60px 20px;
-    background-image: url('img/broly-bg.jpg');
+    background-image: url('images/broly-legendary-super-saiyan.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
