@@ -16,7 +16,7 @@ body {
     color: var(--#FFFFFF);
 }
 
-/* 🟦 HERO SECTION (GOKU-Hero.jpg) */
+/* 🟦 HERO SECTION (Goku-Hero.jpg) */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -30,21 +30,9 @@ body {
     color: var(--#FFFFFF);
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    color: var(--#F57C00);
-    text-shadow: 0 0 12px rgba(245, 124, 0, 0.9);
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    text-shadow: 0 0 8px rgba(255,255,255,0.6);
-}
-
 /* 🔵 SEPARADOR PEQUEÑO (goku-vegeta-blue.jpg) */
 .separador-pequeno img {
-    width: 60%;
+    width: 50%;
     display: block;
     margin: 40px auto;
     border-radius: 10px;
@@ -78,6 +66,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Título */
 .titulo-seccion {
     text-align: center;
     font-size: 2rem;
