@@ -65,7 +65,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('images/Goku-Hero.jpg');
+    url('images/Goku-Hero2.jpg');
     background-size: cover;
     background-position: center;
     color: var(--blanco);
@@ -100,7 +100,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('images/broly-legendary-super-saiyan.jpg');
+    url('images/Goku-Hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('images/Goku-Hero2.jpg');
+    url('images/broly-legendary-super-saiyan.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
