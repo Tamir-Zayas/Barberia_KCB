@@ -16,6 +16,47 @@ body {
     color: var(--blanco);
 }
 
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(13, 71, 161, 0.7);
+}
+
+.logo {
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--naranja-goku);
+}
+
+/* Ajuste para que el hero no quede debajo del menú */
+.hero {
+    margin-top: 80px;
+}
+
 /* 🟦 HERO SECTION */
 .hero {
     text-align: center;
@@ -50,20 +91,6 @@ body {
     margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(245,124,0,0.6);
-}
-
-/* 🟣 SEPARADOR CON CONTENIDO */
-.separador-contenido {
-    padding: 80px 20px;
-    text-align: center;
-    background: linear-gradient(
-        rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75)
-    ),
-    url('images/Goku-Hero2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: var(--blanco);
 }
 
 /* 🟧 SERVICIOS */
@@ -144,7 +171,7 @@ body {
     text-align: center;
 }
 
-/* 🟦 GALERÍA CON BORDES BRILLANTES Y FILTRO AZUL */
+/* 🟦 GALERÍA 3x2 */
 .galeria {
     padding: 60px 20px;
     background-color: rgba(0,0,0,0.6);
@@ -152,7 +179,7 @@ body {
 
 .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 1100px;
     margin: auto;
@@ -185,5 +212,87 @@ body {
         0 0 45px rgba(245, 124, 0, 0.5);
     border-color: var(--naranja-goku);
     filter: brightness(1.1) saturate(1.5);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 12px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* 🟪 FOOTER */
+.footer {
+    background: linear-gradient(
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.9)
+    );
+    padding: 50px 20px 20px;
+    color: var(--blanco);
+    margin-top: 60px;
+    box-shadow: 0 0 25px rgba(13, 71, 161, 0.7);
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    color: var(--naranja-goku);
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+}
+
+.footer-col p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+.footer-col a {
+    color: var(--azul-vegeta);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    opacity: 0.8;
 }
 
