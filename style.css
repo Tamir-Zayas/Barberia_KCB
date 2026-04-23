@@ -12,7 +12,7 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--#000001);
+    background-color: var(--#000000);
     color: var(--#FFFFFF);
 }
 
@@ -24,7 +24,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('image/Goku-Hero.jpg');
+    url('images/Goku-Hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--#FFFFFF);
@@ -59,7 +59,7 @@ body {
         rgba(0,0,0,0.75),
         rgba(0,0,0,0.75)
     ),
-    url('image/Goku-Hero2.jpg');
+    url('images/Goku-Hero2.jpg');
     background-size: cover;
     background-position: center;
     color: var(--#FFFFFF);
@@ -72,7 +72,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('image/broly-legendary-super-saiyan.jpg');
+    url('images/broly-legendary-super-saiyan.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body {
         rgba(0,0,0,0.8),
         rgba(0,0,0,0.8)
     ),
-    url('image/Goku-Hero2.jpg');
+    url('images/Goku-Hero2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
