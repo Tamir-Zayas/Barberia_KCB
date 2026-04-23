@@ -9,8 +9,19 @@
 
 <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">KCB</h2>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#sobre">Sobre KCB</a></li>
+        </ul>
+    </nav>
+
     <!-- HERO -->
-    <header class="hero">
+    <header class="hero" id="hero">
         <h1>Kevin Castello Barber (KCB)</h1>
         <p class="hero-subtitle">Desata tu estilo. Nivel Super Saiyajin.</p>
     </header>
@@ -21,7 +32,7 @@
     </div>
 
     <!-- SERVICIOS -->
-    <section class="servicios">
+    <section class="servicios" id="servicios">
         <h2 class="titulo-seccion">Servicios</h2>
 
         <div class="servicios-grid">
@@ -42,37 +53,74 @@
         </div>
     </section>
 
-    <!-- SEPARADOR CON CONTENIDO -->
-    <section class="separador-contenido">
-        <h2>Transforma tu estilo</h2>
-        <p>Con cortes modernos y energía Saiyajin.</p>
-    </section>
-
     <!-- SOBRE KCB -->
-    <section class="sobre-kcb">
+    <section class="sobre-kcb" id="sobre">
         <h2>Sobre KCB</h2>
         <p>
             Kevin Castello Barber es un barbero profesional con años de experiencia,
-            reconocido por su estilo único y su barbería con ambiente inspirado en Dragon Ball que atrae a los más jóvenes y fanáticos del anime.
+            reconocido por su estilo único y su barbería con ambiente inspirado en Dragon Ball.
             Su misión es ofrecer cortes modernos, precisos y llenos de energía,
-            brindando a cada cliente satisfacción y una transformación digna de un guerrero.
+            brindando a cada cliente una transformación digna de un guerrero.
         </p>
     </section>
 
     <!-- GALERÍA -->
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <h2 class="titulo-seccion">Galería</h2>
 
         <div class="galeria-grid">
-            <img src="images/corte1.jpg" alt="Corte 1">
-            <img src="images/corte2.jpg" alt="Corte 2">
-            <img src="images/corte3.jpg" alt="Corte 3">
-            <img src="images/corte4.jpg" alt="Corte 4">
-            <img src="images/corte5.jpg" alt="Corte 5">
-            <img src="images/corte6.jpg" alt="Corte 6">
+            <img src="images/corte1.jpg" class="zoom-img">
+            <img src="images/corte2.jpg" class="zoom-img">
+            <img src="images/corte3.jpg" class="zoom-img">
+            <img src="images/corte4.jpg" class="zoom-img">
+            <img src="images/corte5.jpg" class="zoom-img">
+            <img src="images/corte6.jpg" class="zoom-img">
         </div>
     </section>
 
+    <!-- MODAL PARA ZOOM -->
+    <div id="modal" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-contenido" id="img-ampliada">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contenido">
+
+            <div class="footer-col">
+                <h3>KC Barber</h3>
+                <p>Transformando estilos con energía Saiyajin.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📍 Ponce, Puerto Rico</p>
+                <p>📞 (939)417-4595</p>
+                <p>✉️ kcbarber@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <p>Martes a Viernes: 8am - 10am/  4pm - 7pm</p>
+                <p>Sábado: 9am - 5pm</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sígueme</h4>
+                <p><a href="#" target="_blank">Instagram</a></p>
+                <p><a href="#" target="_blank">Facebook</a></p>
+                <p><a href="#" target="_blank">TikTok</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            © 2026 KCB Barber — Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-
