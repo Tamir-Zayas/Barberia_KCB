@@ -52,42 +52,41 @@ body {
     color: var(--naranja-goku);
 }
 
-/* HEADER con bordes degradados */
+/* HEADER con bordes azul + naranja y degradado */
 .hero {
     margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
     background: rgba(0,0,0,0.9);
 
-    /* Bordes degradados usando tus colores */
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
+    /* Bordes individuales */
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
-    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
+    /* Sin borde inferior */
+    border-bottom: none;
+
+    /* Degradados */
     border-image-slice: 1;
-}
-
-/* Ajustes individuales */
-.hero {
-    border-top: 4px solid transparent;
     border-image-source: linear-gradient(to right, var(--azul-vegeta), rgba(0,0,0,0.4));
+    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
 
-.hero {
-    border-bottom: 4px solid transparent;
-    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
+/* Título */
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
 }
 
-.hero {
-    border-left: 4px solid transparent;
-    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
-}
-
-.hero {
-    border-right: 4px solid transparent;
-    border-image-source: linear-gradient(to bottom, var(--naranja-goku), rgba(0,0,0,0.4));
+/* Subtítulo */
+.hero-subtitle {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: var(--azul-vegeta);
+    text-shadow: 0 0 8px rgba(13,71,161,0.7);
 }
 
 /* 🔵 SEPARADOR PEQUEÑO */
@@ -302,13 +301,19 @@ body {
     opacity: 0.8;
 }
 
-/* FOOTER con bordes degradados */
+/* FOOTER con bordes azul + naranja y degradado */
 .footer {
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
+    background: rgba(0,0,0,0.9);
+    padding: 50px 20px 20px;
 
-    /* Degradado azul arriba, naranja abajo */
-    border-image: linear-gradient(to right, var(--azul-vegeta), var(--naranja-goku)) 1;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    /* Sin borde superior */
+    border-top: none;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
+    box-shadow: 0 0 20px rgba(245, 124, 0, 0.6);
 }
