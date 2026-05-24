@@ -52,44 +52,38 @@ body {
     color: var(--naranja-goku);
 }
 
-/* 🟦 HEADER CON BORDES DEGRADADOS */
+/* HEADER con bordes degradados */
 .hero {
     margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
     background: rgba(0,0,0,0.9);
 
-    /* Bordes con degradado */
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    /* Bordes degradados usando tus colores */
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
 
-    /* Aplicamos el degradado como borde */
-    border-image: linear-gradient(
-        to bottom,
-        rgba(13, 71, 161, 1),   /* Azul Vegeta */
-        rgba(0, 0, 0, 1)        /* Negro profundo */
-    ) 1;
-
-    box-shadow: 0 0 25px rgba(13, 71, 161, 0.6);
+    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
+    border-image-slice: 1;
 }
 
-/* Título */
-.hero h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: var(--naranja-goku);
-    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+/* Ajustes individuales */
+.hero {
+    border-top: 4px solid transparent;
+    border-image-source: linear-gradient(to right, var(--azul-vegeta), rgba(0,0,0,0.4));
 }
 
-/* Subtítulo */
-.hero-subtitle {
-    font-size: 1rem;
-    margin-top: 8px;
-    color: var(--azul-vegeta);
-    text-shadow: 0 0 8px rgba(13,71,161,0.7);
+.hero {
+    border-left: 4px solid transparent;
+    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
 }
+
+.hero {
+    border-right: 4px solid transparent;
+    border-image-source: linear-gradient(to bottom, var(--naranja-goku), rgba(0,0,0,0.4));
+}
+
 
 /* 🔵 SEPARADOR PEQUEÑO */
 .separador-pequeno img {
@@ -303,17 +297,26 @@ body {
     opacity: 0.8;
 }
 
-/* 🟧 FOOTER CON BORDES DEGRADADOS */
+/* FOOTER con bordes degradados */
 .footer {
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
 
-    border-image: linear-gradient(
-        to top,
-        rgba(245, 124, 0, 1),  /* Naranja Goku */
-        rgba(0, 0, 0, 1)
-    ) 1;
+   /* Ajustes individuales */
+.footer {
+    border-bottom: 4px solid transparent;
+    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
 }
 
+.footer {
+    border-left: 4px solid transparent;
+    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
+}
+
+.footer {
+    border-right: 4px solid transparent;
+    border-image-source: linear-gradient(to bottom, var(--naranja-goku), rgba(0,0,0,0.4));
+}
+
+}
