@@ -69,30 +69,19 @@ body {
         var(--azul-vegeta) 95%
     ) 1;
 
-    /* Título */
+   /* Título */
 .hero h1 {
     font-size: 2rem;
     margin: 0;
-
-    /* Degradado aplicado al texto */
-    color: linear-gradient(
-        to right,
-        var(--naranja-goku),
-        var(--azul-vegeta)
-    );
+    color: var(--naranja-goku);
     text-shadow: 0 0 10px rgba(245,124,0,0.8);
 }
 
-    /* Subtítulo */
+/* Subtítulo */
 .hero-subtitle {
     font-size: 1rem;
     margin-top: 8px;
-
-    color: linear-gradient(
-        to top,
-        var(--azul-vegeta),
-        var(--naranja-goku)
-    );
+    color: var(--azul-vegeta);
     text-shadow: 0 0 8px rgba(13,71,161,0.7);
 }
 
