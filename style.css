@@ -61,31 +61,13 @@ body {
 
     /* Borde completo con degradado vertical */
     border: 6px solid transparent;
-    border-bottom: none; /* para conectar con el footer */
+    border-bottom: none; /* conexión con footer */
 
     border-image: linear-gradient(
         to bottom,
-        var(--azul-vegeta),
-        var(--naranja-goku)
+        var(--azul-vegeta) 0%,
+        var(--naranja-goku) 100%
     ) 1;
-
-    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
-}
-
-/* Título */
-.hero h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: var(--naranja-goku);
-    text-shadow: 0 0 10px rgba(245,124,0,0.8);
-}
-
-/* Subtítulo */
-.hero-subtitle {
-    font-size: 1rem;
-    margin-top: 8px;
-    color: var(--azul-vegeta);
-    text-shadow: 0 0 8px rgba(13,71,161,0.7);
 }
 
 /* 🟧 SERVICIOS */
@@ -297,13 +279,11 @@ body {
     padding: 50px 20px 20px;
 
     border: 6px solid transparent;
-    border-top: none; /* para conectar con el header */
+    border-top: none; /* conexión con header */
 
     border-image: linear-gradient(
         to top,
-        var(--naranja-goku),
-        var(--azul-vegeta)
+        var(--naranja-goku) 0%,
+        var(--azul-vegeta) 100%
     ) 1;
-
-    box-shadow: 0 0 20px rgba(245, 124, 0, 0.6);
 }
