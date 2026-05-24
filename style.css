@@ -65,8 +65,8 @@ body {
 
     border-image: linear-gradient(
         to bottom,
-        var(--azul-vegeta) 0%,
-        var(--naranja-goku) 100%
+        var(--naranja-goku) 0%,
+        var(--azul-vegeta) 95%
     ) 1;
 }
 
@@ -283,7 +283,7 @@ body {
 
     border-image: linear-gradient(
         to top,
-        var(--azul-vegeta) 0%,
-        var(--naranja-goku) 100%
+        var(--naranja-goku) 0%,
+        var(--azul-vegeta) 95%
     ) 1;
 }
