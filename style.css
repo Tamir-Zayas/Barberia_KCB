@@ -283,7 +283,7 @@ body {
 
     border-image: linear-gradient(
         to top,
-        var(--naranja-goku) 0%,
-        var(--azul-vegeta) 100%
+        var(--azul-vegeta) 0%,
+        var(--naranja-goku) 100%
     ) 1;
 }
