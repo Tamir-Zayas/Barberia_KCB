@@ -68,6 +68,37 @@ body {
         var(--naranja-goku) 0%,
         var(--azul-vegeta) 95%
     ) 1;
+
+    .hero h1 {
+    font-size: 2rem;
+    margin: 0;
+
+    /* Degradado aplicado al texto */
+    background: linear-gradient(
+        to right,
+        var(--naranja-goku),
+        var(--azul-vegeta)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 12px rgba(245,124,0,0.6);
+
+    .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 8px;
+
+    background: linear-gradient(
+        to right,
+        var(--azul-vegeta),
+        var(--naranja-goku)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(13,71,161,0.6);
+}
+
 }
 
 /* 🟧 SERVICIOS */
