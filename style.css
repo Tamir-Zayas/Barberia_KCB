@@ -61,6 +61,7 @@ body {
 
     /* Bordes degradados usando tus colores */
     border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
 
@@ -75,6 +76,11 @@ body {
 }
 
 .hero {
+    border-bottom: 4px solid transparent;
+    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
+}
+
+.hero {
     border-left: 4px solid transparent;
     border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
 }
@@ -83,7 +89,6 @@ body {
     border-right: 4px solid transparent;
     border-image-source: linear-gradient(to bottom, var(--naranja-goku), rgba(0,0,0,0.4));
 }
-
 
 /* 🔵 SEPARADOR PEQUEÑO */
 .separador-pequeno img {
@@ -299,24 +304,11 @@ body {
 
 /* FOOTER con bordes degradados */
 .footer {
+    border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
 
-   /* Ajustes individuales */
-.footer {
-    border-bottom: 4px solid transparent;
-    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
-}
-
-.footer {
-    border-left: 4px solid transparent;
-    border-image-source: linear-gradient(to bottom, var(--azul-vegeta), rgba(0,0,0,0.4));
-}
-
-.footer {
-    border-right: 4px solid transparent;
-    border-image-source: linear-gradient(to bottom, var(--naranja-goku), rgba(0,0,0,0.4));
-}
-
+    /* Degradado azul arriba, naranja abajo */
+    border-image: linear-gradient(to right, var(--azul-vegeta), var(--naranja-goku)) 1;
 }
