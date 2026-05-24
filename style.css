@@ -52,27 +52,23 @@ body {
     color: var(--naranja-goku);
 }
 
-/* HEADER con degradado vertical y laterales temáticos */
+/* HEADER con degradado azul → naranja */
 .hero {
     margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
     background: rgba(0,0,0,0.9);
 
-    /* Bordes */
-    border-top: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: none; /* conexión con footer */
+    /* Borde completo con degradado vertical */
+    border: 6px solid transparent;
+    border-bottom: none; /* para conectar con el footer */
 
-    /* Degradado vertical (arriba → abajo) */
     border-image: linear-gradient(
         to bottom,
         var(--azul-vegeta),
-        rgba(0,0,0,0.4)
+        var(--naranja-goku)
     ) 1;
 
-    /* Sombra suave */
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
 
@@ -90,15 +86,6 @@ body {
     margin-top: 8px;
     color: var(--azul-vegeta);
     text-shadow: 0 0 8px rgba(13,71,161,0.7);
-}
-
-/* 🔵 SEPARADOR PEQUEÑO */
-.separador-pequeno img {
-    width: 50%;
-    display: block;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(245,124,0,0.6);
 }
 
 /* 🟧 SERVICIOS */
@@ -304,21 +291,18 @@ body {
     opacity: 0.8;
 }
 
-/* FOOTER con degradado vertical y laterales temáticos */
+/* FOOTER con degradado naranja → azul */
 .footer {
     background: rgba(0,0,0,0.9);
     padding: 50px 20px 20px;
 
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: none; /* conexión con header */
+    border: 6px solid transparent;
+    border-top: none; /* para conectar con el header */
 
-    /* Degradado vertical (abajo → arriba) */
     border-image: linear-gradient(
         to top,
         var(--naranja-goku),
-        rgba(0,0,0,0.4)
+        var(--azul-vegeta)
     ) 1;
 
     box-shadow: 0 0 20px rgba(245, 124, 0, 0.6);
