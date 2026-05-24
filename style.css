@@ -54,20 +54,25 @@ body {
 
 /* 🟦 HEADER DIVIDIDO ESTILO ANIME (AZUL + NARANJA) */
 .hero {
-    margin-top: 80px; /* espacio por el menú */
+    margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
 
+    /* Fondo dividido azul + naranja */
     background: linear-gradient(
         90deg,
-        rgba(13, 71, 161, 0.95) 0%,   /* Azul Vegeta */
+        rgba(13, 71, 161, 0.95) 0%,
         rgba(13, 71, 161, 0.95) 50%,
-        rgba(245, 124, 0, 0.95) 50%, /* Naranja Goku */
+        rgba(245, 124, 0, 0.95) 50%,
         rgba(245, 124, 0, 0.95) 100%
     );
 
+    /* BORDES */
+    border-bottom: 3px solid var(--naranja-goku);
+    border-top: 3px solid var(--azul-vegeta);
+
+    /* Sombra */
     box-shadow: 0 0 25px rgba(13, 71, 161, 0.7);
-    border-bottom: 2px solid var(--naranja-goku);
 }
 
 /* Título */
@@ -298,4 +303,10 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
     opacity: 0.8;
 }
+
+/* Borde superior similar al header */
+.footer {
+    border-top: 3px solid var(--azul-vegeta);
+}
+
 
