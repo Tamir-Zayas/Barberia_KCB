@@ -62,7 +62,6 @@ body {
 
     /* Bordes estilo anime */
     border-top: 3px solid var(--azul-vegeta);
-    border-bottom: 3px solid var(--naranja-goku);
     border-left: 3px solid var(--azul-vegeta);
     border-right: 3px solid var(--naranja-goku);
 
@@ -298,13 +297,9 @@ body {
     opacity: 0.8;
 }
 
-/* 🟧 FOOTER CON BORDES EN LOS 4 LADOS */
+/* 🟧 FOOTER CON BORDES EN 3LADOS */
 .footer {
-    border-top: 3px solid var(--azul-vegeta);
     border-bottom: 3px solid var(--naranja-goku);
     border-left: 3px solid var(--azul-vegeta);
     border-right: 3px solid var(--naranja-goku);
 }
-
-
-
