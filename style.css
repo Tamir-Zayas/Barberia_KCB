@@ -52,44 +52,38 @@ body {
     color: var(--naranja-goku);
 }
 
-/* 🟦 HEADER DIVIDIDO ESTILO ANIME (AZUL + NARANJA) */
+/* 🟦 HEADER LIMPIO CON BORDES TEMÁTICOS */
 .hero {
-    margin-top: 80px;
+    margin-top: 80px; /* espacio por el menú */
     padding: 40px 20px;
     text-align: center;
 
-    /* Fondo dividido azul + naranja */
-    background: linear-gradient(
-        90deg,
-        rgba(13, 71, 161, 0.95) 0%,
-        rgba(13, 71, 161, 0.95) 50%,
-        rgba(245, 124, 0, 0.95) 50%,
-        rgba(245, 124, 0, 0.95) 100%
-    );
+    background: rgba(0,0,0,0.9); /* fondo limpio estilo footer */
 
-    /* BORDES */
-    border-bottom: 3px solid var(--naranja-goku);
+    /* Bordes estilo anime */
     border-top: 3px solid var(--azul-vegeta);
+    border-bottom: 3px solid var(--naranja-goku);
+    border-left: 3px solid var(--azul-vegeta);
+    border-right: 3px solid var(--naranja-goku);
 
-    /* Sombra */
-    box-shadow: 0 0 25px rgba(13, 71, 161, 0.7);
+
+    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
 
 /* Título */
 .hero h1 {
     font-size: 2rem;
     margin: 0;
-    color: var(--blanco);
-    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
 }
 
 /* Subtítulo */
 .hero-subtitle {
     font-size: 1rem;
     margin-top: 8px;
-    color: var(--blanco);
-    opacity: 0.9;
-    text-shadow: 0 0 6px rgba(255,255,255,0.5);
+    color: var(--azul-vegeta);
+    text-shadow: 0 0 8px rgba(13,71,161,0.7);
 }
 
 /* 🔵 SEPARADOR PEQUEÑO */
@@ -304,9 +298,13 @@ body {
     opacity: 0.8;
 }
 
-/* Borde superior similar al header */
+/* 🟧 FOOTER CON BORDES EN LOS 4 LADOS */
 .footer {
     border-top: 3px solid var(--azul-vegeta);
+    border-bottom: 3px solid var(--naranja-goku);
+    border-left: 3px solid var(--azul-vegeta);
+    border-right: 3px solid var(--naranja-goku);
 }
+
 
 
