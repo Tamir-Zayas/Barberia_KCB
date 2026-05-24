@@ -52,24 +52,27 @@ body {
     color: var(--naranja-goku);
 }
 
-/* HEADER con bordes azul + naranja y degradado */
+/* HEADER con degradado vertical y laterales temáticos */
 .hero {
     margin-top: 80px;
     padding: 40px 20px;
     text-align: center;
     background: rgba(0,0,0,0.9);
 
-    /* Bordes individuales */
-    border-top: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    /* Bordes */
+    border-top: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none; /* conexión con footer */
 
-    /* Sin borde inferior */
-    border-bottom: none;
+    /* Degradado vertical (arriba → abajo) */
+    border-image: linear-gradient(
+        to bottom,
+        var(--azul-vegeta),
+        rgba(0,0,0,0.4)
+    ) 1;
 
-    /* Degradados */
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, var(--azul-vegeta), rgba(0,0,0,0.4));
+    /* Sombra suave */
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
 
@@ -301,19 +304,22 @@ body {
     opacity: 0.8;
 }
 
-/* FOOTER con bordes azul + naranja y degradado */
+/* FOOTER con degradado vertical y laterales temáticos */
 .footer {
     background: rgba(0,0,0,0.9);
     padding: 50px 20px 20px;
 
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: none; /* conexión con header */
 
-    /* Sin borde superior */
-    border-top: none;
+    /* Degradado vertical (abajo → arriba) */
+    border-image: linear-gradient(
+        to top,
+        var(--naranja-goku),
+        rgba(0,0,0,0.4)
+    ) 1;
 
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, var(--naranja-goku), rgba(0,0,0,0.4));
     box-shadow: 0 0 20px rgba(245, 124, 0, 0.6);
 }
