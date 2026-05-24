@@ -52,37 +52,41 @@ body {
     color: var(--naranja-goku);
 }
 
-/* Ajuste para que el hero no quede debajo del menú */
-.hero {
-    margin-top: 80px;
-}
-
 /* 🟦 HERO SECTION */
 .hero {
+    margin-top: 80px; /* espacio por el menú */
+    padding: 40px 20px; /* antes era 80px */
     text-align: center;
-    padding: 80px 20px;
+
     background: linear-gradient(
-        rgba(0,0,0,0.8),
-        rgba(0,0,0,0.8)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     ),
-    url('images/Goku-Hero2.jpg');
+    url('images/Goku-Hero.jpg');
+
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     color: var(--blanco);
-    box-shadow: 0 0 40px rgba(13, 71, 161, 0.7);
+    box-shadow: 0 0 25px rgba(13, 71, 161, 0.6);
 }
 
+/* Título más pequeño */
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 1.9rem; /* antes 2.5rem */
+    margin-bottom: 5px;
     color: var(--naranja-goku);
-    text-shadow: 0 0 12px rgba(245, 124, 0, 0.9);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
 }
 
+/* Subtítulo más compacto */
 .hero-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+    font-size: 1rem; /* antes 1.2rem */
+    opacity: 0.9;
+    text-shadow: 0 0 6px rgba(255,255,255,0.5);
 }
+
 
 /* 🔵 SEPARADOR PEQUEÑO */
 .separador-pequeno img {
