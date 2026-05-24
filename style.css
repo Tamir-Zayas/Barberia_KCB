@@ -69,7 +69,8 @@ body {
         var(--azul-vegeta) 95%
     ) 1;
 
-    .hero h1 {
+    /* Título */
+.hero h1 {
     font-size: 2rem;
     margin: 0;
 
@@ -79,24 +80,20 @@ body {
         var(--naranja-goku),
         var(--azul-vegeta)
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+}
 
-    text-shadow: 0 0 12px rgba(245,124,0,0.6);
-
-    .hero-subtitle {
+    /* Subtítulo */
+.hero-subtitle {
     font-size: 1rem;
     margin-top: 8px;
 
     background: linear-gradient(
-        to right,
+        to top,
         var(--azul-vegeta),
         var(--naranja-goku)
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow: 0 0 10px rgba(13,71,161,0.6);
+    text-shadow: 0 0 8px rgba(13,71,161,0.7);
 }
 
 }
