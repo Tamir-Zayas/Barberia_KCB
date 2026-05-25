@@ -51,41 +51,24 @@ body {
 .navbar a:hover {
     color: var(--naranja-goku);
 }
-
-/* HEADER con degradado azul → naranja */
-.hero {
-    margin-top: 80px;
-    padding: 40px 20px;
-    text-align: center;
-    background: rgba(0,0,0,0.9);
-
-    /* Borde completo con degradado vertical */
-    border: 6px solid transparent;
-    border-bottom: none; /* conexión con footer */
-
-    border-image: linear-gradient(
-        to bottom,
-        var(--naranja-goku) 0%,
-        var(--azul-vegeta) 95%
-    ) 1;
-
-   /* Título */
+/*header*/
 .hero h1 {
     font-size: 2rem;
     margin: 0;
-    color: var(--naranja-goku);
-    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+
+    background: linear-gradient(
+        to right,
+        var(--naranja-goku),
+        var(--azul-vegeta)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+
+    text-shadow: 0 0 12px rgba(245,124,0,0.6);
 }
 
-/* Subtítulo */
-.hero-subtitle {
-    font-size: 1rem;
-    margin-top: 8px;
-    color: var(--azul-vegeta);
-    text-shadow: 0 0 8px rgba(13,71,161,0.7);
-}
-
-}
 
 /* 🟧 SERVICIOS */
 .servicios {
@@ -300,7 +283,7 @@ body {
 
     border-image: linear-gradient(
         to top,
-        var(--naranja-goku) 0%,
+        var(--naranja-goku) 5%,
         var(--azul-vegeta) 95%
     ) 1;
 }
