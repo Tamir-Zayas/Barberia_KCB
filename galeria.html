@@ -11,15 +11,23 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2 class="logo">KCB</h2>
-        <ul>
-            <a href="index.html" class="enlace_nav">Inicio</a>
-            <a href="servicios.html" class="enlace_nav">Servicios</a>
-            <a href="galeria.html" class="enlace_nav">Galería</a>
-            <a href="Sobre KCB.html" class="enlace_nav">Sobre KCB</a>
+    <nav>
+        <div class="logo">KCB</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul id="nav-menu">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#sobre">Sobre KCBarber</a></li>
         </ul>
     </nav>
+
+    <script>
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("show");
+    }
+    </script>
 
     <!-- Header -->
         <header class="hero" id="hero">
