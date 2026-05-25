@@ -155,13 +155,12 @@ nav ul li a.active::after {
 /*Introducción de la página web */
 .hero-introduccion {
     background: url('images/goku-vegeta-blue.jpg') center center/cover no-repeat;
-    height: 70vh;
+    background-color: #000000;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #000000;
+    padding: 80px 20px;
 }
 
 /* Oscurece la imagen para que el texto se lea */
