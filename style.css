@@ -152,6 +152,72 @@ nav ul li a.active::after {
 
     text-shadow: 0 0 8px rgba(13,71,161,0.5);
 }
+/*Introducción de la página web */
+.hero-introduccion {
+    background: url('images/goku-vegeta-blue.jpg') center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Oscurece la imagen para que el texto se lea */
+.hero-introduccion::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+/* Contenido */
+.hero-contenido {
+    position: relative;
+    text-align: center;
+    max-width: 900px;
+    color: white;
+}
+
+.hero-contenido h1 {
+    font-size: 3rem;
+    color: var(--naranja-goku);
+    text-shadow: 0 0 15px rgba(245,124,0,0.8);
+}
+
+.hero-contenido h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.hero-contenido p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-introduccion {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-contenido h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-contenido p {
+        font-size: 1rem;
+    }
+}
+
 
 /* 🟧 SERVICIOS */
 .servicios {
@@ -218,9 +284,9 @@ nav ul li a.active::after {
 .sobre-kcb h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--azul-vegeta);
-    text-shadow: 0 0 12px rgba(13, 71, 161, 0.9);
-    margin-bottom: 20px;
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245, 124, 0, 0.8);
+    margin-bottom: 30px;
 }
 
 .sobre-kcb p {
