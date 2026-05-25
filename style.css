@@ -338,22 +338,30 @@ body {
 
 /*footer redes sociales*/
 .social-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-.social-menu li a {
-    font-size: 1.4rem;
-    color: var(--azul-vegeta);
+.social-menu i {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background: var(--azul-vegeta); /* Fondo azul Saiyajin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #fff; /* Ícono blanco */
     transition: 0.3s ease;
 }
 
-.social-menu li a:hover {
-    color: var(--naranja-goku);
-    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+.social-menu i:hover {
+    background: var(--naranja-goku); /* Hover naranja Goku */
+    box-shadow: 0 0 10px rgba(245, 124, 0, 0.8);
 }
+
 
