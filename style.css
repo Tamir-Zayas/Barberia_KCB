@@ -350,12 +350,12 @@ body {
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 50%;
-    background: red; /* Fondo azul Saiyajin */
+    background: var(--azul-vegeta); /* Fondo azul Saiyajin */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    color: #fff; /* Ícono blanco */
+    color: #fff !important; /* Ícono blanco */
     transition: 0.3s ease;
 }
 
@@ -363,5 +363,3 @@ body {
     background: var(--naranja-goku); /* Hover naranja Goku */
     box-shadow: 0 0 10px rgba(245, 124, 0, 0.8);
 }
-
-
