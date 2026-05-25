@@ -71,7 +71,7 @@ body {
     ) 1;
 
     /* Borde inferior invisible (sin romper el degradado) */
-    border-bottom-color: transparent;
+    border-bottom-color: black;
 
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
@@ -95,19 +95,22 @@ body {
 
 /* Subtítulo con degradado invertido */
 .hero-subtitle {
-    font-size: 1rem;
-    margin-top: 8px;
+    font-size: 1.1rem;
+    margin-top: 12px; /* más espacio debajo del título */
+    letter-spacing: 1px;
 
+    /* Degradado más suave y más azul */
     background: linear-gradient(
         to right,
-        var(--azul-vegeta),
-        var(--naranja-goku)
+        var(--azul-vegeta) 20%,
+        var(--naranja-goku) 80%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     display: inline-block;
-    text-shadow: 0 0 10px rgba(13,71,161,0.6);
+
+    text-shadow: 0 0 8px rgba(13,71,161,0.5);
 }
 
 /* 🟧 SERVICIOS */
@@ -313,7 +316,7 @@ body {
     opacity: 0.8;
 }
 
-/* FOOTER con degradado*/
+/* Bordes para el FOOTER con degradado*/
 .footer {
     background: rgba(0,0,0,0.9);
     padding: 50px 20px 20px;
@@ -330,7 +333,7 @@ body {
     ) 1;
 
     /* Borde superior invisible (sin romper el degradado) */
-    border-top-color: transparent;
+    border-top-color: black;
 
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
