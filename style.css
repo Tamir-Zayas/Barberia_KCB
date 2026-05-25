@@ -51,23 +51,31 @@ body {
 .navbar a:hover {
     color: var(--naranja-goku);
 }
-/*header*/
-.hero h1 {
-    font-size: 2rem;
-    margin: 0;
+/*Header*/
+.hero {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
 
-    background: linear-gradient(
-        to right,
+    /* Borde completo para que el degradado funcione */
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+
+    /* Degradado vertical */
+    border-image: linear-gradient(
+        to bottom,
         var(--naranja-goku),
         var(--azul-vegeta)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    ) 1;
 
-    display: inline-block;
+    /* Quitar borde inferior DESPUÉS del degradado */
+    border-bottom: none;
 
-    text-shadow: 0 0 12px rgba(245,124,0,0.6);
+    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
+
 
 
 /* 🟧 SERVICIOS */
@@ -273,17 +281,22 @@ body {
     opacity: 0.8;
 }
 
-/* FOOTER con degradado naranja → azul */
+/* FOOTER con degradado*/
 .footer {
     background: rgba(0,0,0,0.9);
     padding: 50px 20px 20px;
 
-    border: 6px solid transparent;
-    border-top: none; /* conexión con header */
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
 
     border-image: linear-gradient(
         to top,
-        var(--naranja-goku) 5%,
-        var(--azul-vegeta) 95%
+        var(--naranja-goku),
+        var(--azul-vegeta)
     ) 1;
+
+    border-top: none;
+
+    box-shadow: 0 0 20px rgba(245, 124, 0, 0.6);
 }
