@@ -51,7 +51,7 @@ body {
 .navbar a:hover {
     color: var(--naranja-goku);
 }
-/* HEADER FINAL */
+/* HEADER */
 .hero {
     margin-top: 80px;
     padding: 40px 20px;
@@ -102,8 +102,8 @@ body {
 
     background: linear-gradient(
         to right,
-        var(--azul-vegeta),
-        var(--naranja-goku)
+        var(--naranja-goku),
+        var(--azul-vegeta)
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
