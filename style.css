@@ -350,7 +350,7 @@ body {
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 50%;
-    background: var(--azul-vegeta); /* Fondo azul Saiyajin */
+    background: red; /* Fondo azul Saiyajin */
     display: flex;
     justify-content: center;
     align-items: center;
