@@ -335,3 +335,25 @@ body {
 
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
+
+/*footer redes sociales*/
+.social-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-menu li a {
+    font-size: 1.4rem;
+    color: var(--azul-vegeta);
+    transition: 0.3s ease;
+}
+
+.social-menu li a:hover {
+    color: var(--naranja-goku);
+    text-shadow: 0 0 10px rgba(245,124,0,0.8);
+}
+
