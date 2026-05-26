@@ -388,11 +388,25 @@ nav ul li a.active::after {
 
 /* 🟪 FOOTER */
 .footer {
-    background: rgba(0,0,0,0.55); /*tono oscuro*/
+    background: rgba(0,0,0,0.55); /* tono oscuro con blur */
     backdrop-filter: blur(16px);
+
     padding: 50px 20px 20px;
-    color: #fff ;
+    color: #fff;
     margin-top: 0px;
+
+    /* Borde degradado naranja → azul */
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: linear-gradient(
+        to right,
+        var(--naranja-goku),
+        var(--azul-vegeta)
+    ) 1;
+    border-top-color: none;
+
+    /* Sombra azul Vegeta */
     box-shadow: 0 0 25px rgba(13, 71, 161, 0.7);
 }
 
@@ -434,28 +448,6 @@ nav ul li a.active::after {
     padding-top: 15px;
     border-top: 1px solid rgba(255,255,255,0.2);
     opacity: 0.8;
-}
-
-/* Bordes para el FOOTER con degradado*/
-.footer {
-    background: rgba(0,0,0,0.9);
-    padding: 50px 20px 20px;
-
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent;
-
-    /* Degradado vertical naranja → azul */
-    border-image: linear-gradient(
-        to right,
-        var(--naranja-goku),
-        var(--azul-vegeta)
-    ) 1;
-
-    /* Borde superior invisible (sin romper el degradado) */
-    border-top-color: none;
-
-    box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
 
 /*footer redes sociales*/
