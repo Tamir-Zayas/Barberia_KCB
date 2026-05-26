@@ -478,3 +478,14 @@ nav ul li a.active::after {
     background: var(--naranja-goku); /* Hover naranja Goku */
     box-shadow: 0 0 10px rgba(245, 124, 0, 0.8);
 }
+/* animación de fade-in al cambiar de sección */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.30s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
