@@ -4,92 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KCB - Kevin Castello Barber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2 class="logo">KCB</h2>
-        <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#sobre">Sobre KCB</a></li>
+    <nav>
+        <div class="logo">KCB</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre-kcb.html">Sobre KCBarber</a></li>
         </ul>
     </nav>
 
-    <!-- HERO -->
-    <header class="hero" id="hero">
-        <h1>Kevin Castello Barber (KCB)</h1>
-        <p class="hero-subtitle">Desata tu estilo. Nivel Super Saiyajin.</p>
-    </header>
+    <script>
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("show");
+    }
+    </script>
 
-    <!-- SEPARADOR PEQUEÑO -->
-    <div class="separador-pequeno">
-        <img src="images/goku-vegeta-blue.jpg" alt="Goku y Vegeta Blue">
+    <!--header -->
+    <div class="hero" id="hero">
+        <h1>KCBarber</h1>
+        <p class="hero-subtitle">Desata tu estilo al nivel Super Saiyajin</p>
     </div>
 
-    <!-- SERVICIOS -->
-    <section class="servicios" id="servicios">
-        <h2 class="titulo-seccion">Servicios</h2>
+    <!--Introducción de la página web-->
+    <section class="hero-introduccion fade-in">
+        <div class="hero-contenido">
+            <h1>Nuestra Esencia y lo que nos distingue</h1>
+            <h2>La energía que impulsa a KCBarber</h2>
+            <p>KCBarber nació en el pueblo de Ponce con el propósito de destacarse como una barbería diferente a lo usual y la transformación personal. 
+            Cada cliente que se sienta en la silla recibe más que un corte: recibe dedicación, precisión y una experiencia pensada para elevar su estilo y su confianza. 
+            Nuestra misión es que se dé a conocer sobre esta barbería con un toque único y digno de un guerrero, por eso, nuestra página web, contiene imágenes que pueden ser de referencia para que los futuros clientes conozcan sobre el trabajo que se realiza en la barbería.
+            También, hacer que cada visita se sienta como una evolución tanto para el cliente como para el barbero, inspirada en la disciplina y energía que caracterizan al espíritu Saiyajin. 
+            Aquí no solo se mejora la apariencia; se potencia la mejor versión de cada persona.</p>
 
-        <div class="servicios-grid">
-            <div class="servicio-card">
-                <h3>Fade</h3>
-                <p>Corte moderno con estilo limpio y definido.</p>
-            </div>
-
-            <div class="servicio-card">
-                <h3>Barba</h3>
-                <p>Diseño y perfilado profesional.</p>
-            </div>
-
-            <div class="servicio-card">
-                <h3>Color</h3>
-                <p>Transformación total estilo Super Saiyajin.</p>
-            </div>
         </div>
     </section>
-
-    <!-- SOBRE KCB -->
-    <section class="sobre-kcb" id="sobre">
-        <h2>Sobre KCB</h2>
-        <p>
-            Kevin Castello Barber es un barbero profesional con años de experiencia,
-            reconocido por su estilo único y su barbería con ambiente inspirado en Dragon Ball.
-            Su misión es ofrecer cortes modernos, precisos y llenos de energía,
-            brindando a cada cliente una transformación digna de un guerrero.
-        </p>
-    </section>
-
-    <!-- GALERÍA -->
-    <section class="galeria" id="galeria">
-        <h2 class="titulo-seccion">Galería</h2>
-
-        <div class="galeria-grid">
-            <img src="images/corte1.jpg" class="zoom-img">
-            <img src="images/corte2.jpg" class="zoom-img">
-            <img src="images/corte3.jpg" class="zoom-img">
-            <img src="images/corte4.jpg" class="zoom-img">
-            <img src="images/corte5.jpg" class="zoom-img">
-            <img src="images/corte6.jpg" class="zoom-img">
-        </div>
-    </section>
-
-    <!-- MODAL PARA ZOOM -->
-    <div id="modal" class="modal">
-        <span class="cerrar">&times;</span>
-        <img class="modal-contenido" id="img-ampliada">
-    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-contenido">
 
             <div class="footer-col">
-                <h3>KC Barber</h3>
+                <h3>KCBarber</h3>
                 <p>Transformando estilos con energía Saiyajin.</p>
             </div>
 
@@ -107,16 +73,18 @@
             </div>
 
             <div class="footer-col">
-                <h4>Sígueme</h4>
-                <p><a href="#" target="_blank">Instagram</a></p>
-                <p><a href="#" target="_blank">Facebook</a></p>
-                <p><a href="#" target="_blank">TikTok</a></p>
+                <h4>Síguenos</h4>
+                <ul class="social-menu no-padding"> 
+                    <li><a href="https://facebook.com/"><i class="fab fa-facebook"></i></a></li> 
+                    <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i> </a></li> 
+                    <li><a href="https://tiktok.com/"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
             </div>
 
         </div>
 
         <div class="footer-copy">
-            © 2026 KCB Barber — Todos los derechos reservados.
+            © 2026 KCBarber — Todos los derechos reservados.
         </div>
     </footer>
 
