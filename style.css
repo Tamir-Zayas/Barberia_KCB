@@ -70,13 +70,14 @@ nav ul li a.active::after {
     cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* Dispositivos móviles */
 @media (max-width: 768px) {
     nav ul {
         position: absolute;
         top: 70px;
         right: 0;
-        background: rgba(0,0,0,0.95);
+        background: rgba(0,0,0,0.55);
+        backdrop-filter: blur(10px);
         width: 200px;
         flex-direction: column;
         padding: 20px;
@@ -161,6 +162,12 @@ nav ul li a.active::after {
     justify-content: center;
     align-items: center;
     padding: 80px 40px;
+}
+
+/* Añadiendo efecto de Blur */
+.hero-introduccion {
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.35);
 }
 
 /* Oscurece la imagen para que el texto se lea */
@@ -252,7 +259,7 @@ nav ul li a.active::after {
 /* 🔥 TARJETAS DE SERVICIO */
 .servicio-card {
     background-color: var(--azul-claro);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     border: 2px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     padding: 20px;
@@ -379,10 +386,8 @@ nav ul li a.active::after {
 
 /* 🟪 FOOTER */
 .footer {
-    background: linear-gradient(
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.9)
-    );
+    background: rgba(0,0,0,0.55); /*tono oscuro*/
+    backdrop-filter: blur(8px);
     padding: 50px 20px 20px;
     color: #fff ;
     margin-top: 0px;
