@@ -166,8 +166,10 @@ nav ul li a.active::after {
 
 /* Añadiendo efecto de Blur */
 .hero-introduccion {
+    background: 
+        rgba(0,0,0,0.35),
+        url('images/goku-vegeta-blue.jpg') center center/cover no-repeat;
     backdrop-filter: blur(6px);
-    background: rgba(0,0,0,0.35);
 }
 
 /* Oscurece la imagen para que el texto se lea */
@@ -496,7 +498,7 @@ nav ul li a.active::after {
 }
 /*Footer adaptable a dispositivos móviles */
 @media (max-width: 768px) {
-    .footer {
+    .footer-contenido {
         grid-template-columns: 1fr; /* 1 columna */
         text-align: center;
         gap: 20px;
@@ -510,3 +512,4 @@ nav ul li a.active::after {
         margin-bottom: 10px;
     }
 }
+
