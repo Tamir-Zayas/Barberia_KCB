@@ -508,8 +508,8 @@ nav ul li a.active::after {
         margin-bottom: 15px;
     }
 
-    .footer-col h3 {
+    .footer-col h3,
+    .footer-col h4 {
         margin-bottom: 10px;
     }
 }
-
