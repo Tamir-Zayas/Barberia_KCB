@@ -114,7 +114,7 @@ nav ul li a.active::after {
     ) 1;
 
     /* Borde inferior invisible (sin romper el degradado) */
-    border-bottom-color: none;
+    border-bottom-color: transparent;
 
     box-shadow: 0 0 20px rgba(13, 71, 161, 0.6);
 }
@@ -404,7 +404,7 @@ nav ul li a.active::after {
         var(--naranja-goku),
         var(--azul-vegeta)
     ) 1;
-    border-top-color: none;
+    border-top-color: transparent;
 
     /* Sombra azul Vegeta */
     box-shadow: 0 0 25px rgba(13, 71, 161, 0.7);
